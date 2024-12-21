@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/cgaur/Box/Fall%2724%20Semester/EAS%20503%20-%20Intro%20to%20Programming/Final%20Project/my_resume_book/files/mlruns/0/0376d588862e4b6ebda67fce7fe601e4/artifacts
+end_time: 1734744563685
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0376d588862e4b6ebda67fce7fe601e4
+run_name: Histograms of features
+run_uuid: 0376d588862e4b6ebda67fce7fe601e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734744563498
+status: 3
+tags: []
+user_id: cgaur

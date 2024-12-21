@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/cgaur/Box/Fall%2724%20Semester/EAS%20503%20-%20Intro%20to%20Programming/Final%20Project/my_resume_book/content/mlruns/0/be60fc4a986d428980aa81277234427c/artifacts
+end_time: 1734747882764
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: be60fc4a986d428980aa81277234427c
+run_name: Correlation
+run_uuid: be60fc4a986d428980aa81277234427c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1734747882572
+status: 3
+tags: []
+user_id: cgaur
