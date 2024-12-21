@@ -558,19 +558,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">IntegrityError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span><span class="s1"> INSERT INTO country(country_id,country) values(?,?)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span><span class="s1">                    &#39;&#39;&#39;</span><span class="p">,</span><span class="n">tuples_for_insertion</span><span class="p">[</span><span class="s1">&#39;countries&#39;</span><span class="p">])</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Insert data for each table using the appropriate query</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">cursor</span><span class="o">.</span><span class="n">executemany</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s1"> INSERT INTO EDUCATION (education_id, education, education_num)</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span><span class="s1"> VALUES (?, ?, ?)</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="s1"> &#39;&#39;&#39;</span><span class="p">,</span> <span class="n">tuples_for_insertion</span><span class="p">[</span><span class="s1">&#39;education&#39;</span><span class="p">])</span>
-
-<span class="ne">IntegrityError</span>: UNIQUE constraint failed: COUNTRY.country_id
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;sqlite3.Cursor at 0x1b7c02d4f40&gt;
 </pre></div>
 </div>
 </div>
@@ -625,21 +613,21 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\cgaur\AppData\Local\Temp\ipykernel_11620\2867704570.py:1: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\cgaur\AppData\Local\Temp\ipykernel_42156\2867704570.py:1: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   data_with_id[&#39;native-country&#39;]=data_with_id[&#39;native-country&#39;].replace(countries_dict)
-C:\Users\cgaur\AppData\Local\Temp\ipykernel_11620\2867704570.py:2: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+C:\Users\cgaur\AppData\Local\Temp\ipykernel_42156\2867704570.py:2: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   data_with_id[&#39;education&#39;]=data_with_id[&#39;education&#39;].replace(education_dict)
-C:\Users\cgaur\AppData\Local\Temp\ipykernel_11620\2867704570.py:3: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+C:\Users\cgaur\AppData\Local\Temp\ipykernel_42156\2867704570.py:3: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   data_with_id[&#39;race&#39;]=data_with_id[&#39;race&#39;].replace(races_dict)
-C:\Users\cgaur\AppData\Local\Temp\ipykernel_11620\2867704570.py:4: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+C:\Users\cgaur\AppData\Local\Temp\ipykernel_42156\2867704570.py:4: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   data_with_id[&#39;occupation&#39;]=data_with_id[&#39;occupation&#39;].replace(occupations_dict)
-C:\Users\cgaur\AppData\Local\Temp\ipykernel_11620\2867704570.py:5: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+C:\Users\cgaur\AppData\Local\Temp\ipykernel_42156\2867704570.py:5: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   data_with_id[&#39;workclass&#39;]=data_with_id[&#39;workclass&#39;].replace(workclasses_dict)
-C:\Users\cgaur\AppData\Local\Temp\ipykernel_11620\2867704570.py:6: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+C:\Users\cgaur\AppData\Local\Temp\ipykernel_42156\2867704570.py:6: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   data_with_id[&#39;marital-status&#39;]=data_with_id[&#39;marital-status&#39;].replace(marital_statuses_dict)
-C:\Users\cgaur\AppData\Local\Temp\ipykernel_11620\2867704570.py:7: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+C:\Users\cgaur\AppData\Local\Temp\ipykernel_42156\2867704570.py:7: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   data_with_id[&#39;relationship&#39;]=data_with_id[&#39;relationship&#39;].replace(relationships_dict)
-C:\Users\cgaur\AppData\Local\Temp\ipykernel_11620\2867704570.py:8: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+C:\Users\cgaur\AppData\Local\Temp\ipykernel_42156\2867704570.py:8: FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   data_with_id[&#39;gender&#39;]=data_with_id[&#39;gender&#39;].replace(genders_dict)
 </pre></div>
 </div>
@@ -804,24 +792,6 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024/12/20 21:24:41 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
-The git executable must be specified in one of the following ways:
-    - be included in your $PATH
-    - be set via $GIT_PYTHON_GIT_EXECUTABLE
-    - explicitly set via git.refresh(&lt;full-path-to-git-executable&gt;)
-
-All git commands will error until this is rectified.
-
-This initial message can be silenced or aggravated in the future by setting the
-$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
-    - quiet|q|silence|s|silent|none|n|0: for no message or exception
-    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
-    - error|e|exception|raise|r|2: for a raised exception
-
-Example:
-    export GIT_PYTHON_REFRESH=quiet
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function mlflow.tracking.fluent.end_run(status: str = &#39;FINISHED&#39;) -&gt; None&gt;
 </pre></div>
 </div>
@@ -851,7 +821,7 @@ Example:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/b3d1637498ecfc3906320323a1855a3e90852370eace7024bf4f3cf5d8a3c3b1.png" src="../_images/b3d1637498ecfc3906320323a1855a3e90852370eace7024bf4f3cf5d8a3c3b1.png" />
+<img alt="../_images/cfb562ac30d35637a453d10ebda3ed26510ce5d192a863216e66611211789781.png" src="../_images/cfb562ac30d35637a453d10ebda3ed26510ce5d192a863216e66611211789781.png" />
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;function mlflow.tracking.fluent.end_run(status: str = &#39;FINISHED&#39;) -&gt; None&gt;
 </pre></div>
 </div>
@@ -953,77 +923,71 @@ Some outliers in Capital Gain but not removing right now.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py:960: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py:982: UserWarning: Scoring failed. The score on this train-test partition for these parameters will be set to nan. Details: 
 Traceback (most recent call last):
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_validation.py&quot;, line 949, in _score
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py&quot;, line 971, in _score
     scores = scorer(estimator, X_test, y_test, **score_params)
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\metrics\_scorer.py&quot;, line 288, in __call__
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\metrics\_scorer.py&quot;, line 279, in __call__
     return self._score(partial(_cached_call, None), estimator, X, y_true, **_kwargs)
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\metrics\_scorer.py&quot;, line 380, in _score
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\metrics\_scorer.py&quot;, line 371, in _score
     y_pred = method_caller(
-        estimator,
-    ...&lt;2 lines&gt;...
-        pos_label=pos_label,
-    )
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\metrics\_scorer.py&quot;, line 90, in _cached_call
+             ^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\metrics\_scorer.py&quot;, line 89, in _cached_call
     result, _ = _get_response_values(
-                ~~~~~~~~~~~~~~~~~~~~^
-        estimator, *args, response_method=response_method, **kwargs
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\_response.py&quot;, line 214, in _get_response_values
+                ^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\utils\_response.py&quot;, line 211, in _get_response_values
     y_pred = prediction_method(X)
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\pipeline.py&quot;, line 785, in predict
+             ^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\pipeline.py&quot;, line 600, in predict
     Xt = transform.transform(Xt)
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\_set_output.py&quot;, line 319, in wrapped
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\utils\_set_output.py&quot;, line 313, in wrapped
     data_to_wrap = f(self, X, *args, **kwargs)
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\compose\_column_transformer.py&quot;, line 1100, in transform
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\compose\_column_transformer.py&quot;, line 1076, in transform
     Xs = self._call_func_on_transformers(
-        X,
-    ...&lt;3 lines&gt;...
-        routed_params=routed_params,
-    )
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\compose\_column_transformer.py&quot;, line 909, in _call_func_on_transformers
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\compose\_column_transformer.py&quot;, line 885, in _call_func_on_transformers
     return Parallel(n_jobs=self.n_jobs)(jobs)
-           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\parallel.py&quot;, line 77, in __call__
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\utils\parallel.py&quot;, line 74, in __call__
     return super().__call__(iterable_with_config)
-           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\parallel.py&quot;, line 1918, in __call__
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\joblib\parallel.py&quot;, line 1918, in __call__
     return output if self.return_generator else list(output)
-                                                ~~~~^^^^^^^^
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\parallel.py&quot;, line 1847, in _get_sequential_output
+                                                ^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\joblib\parallel.py&quot;, line 1847, in _get_sequential_output
     res = func(*args, **kwargs)
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\parallel.py&quot;, line 139, in __call__
+          ^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\utils\parallel.py&quot;, line 136, in __call__
     return self.function(*args, **kwargs)
-           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\pipeline.py&quot;, line 1520, in _transform_one
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\pipeline.py&quot;, line 1290, in _transform_one
     res = transformer.transform(X, **params.transform)
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\utils\_set_output.py&quot;, line 319, in wrapped
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\utils\_set_output.py&quot;, line 313, in wrapped
     data_to_wrap = f(self, X, *args, **kwargs)
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\preprocessing\_encoders.py&quot;, line 1043, in transform
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\preprocessing\_encoders.py&quot;, line 1024, in transform
     X_int, X_mask = self._transform(
-                    ~~~~~~~~~~~~~~~^
-        X,
-        ^^
-    ...&lt;2 lines&gt;...
-        warn_on_unknown=warn_on_unknown,
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File &quot;c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\preprocessing\_encoders.py&quot;, line 218, in _transform
+                    ^^^^^^^^^^^^^^^^
+  File &quot;C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\preprocessing\_encoders.py&quot;, line 214, in _transform
     raise ValueError(msg)
 ValueError: Found unknown categories [&#39;Holand-Netherlands&#39;] in column 7 during transform
 
   warnings.warn(
-2024/12/20 21:24:53 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run valuable-shrew-200 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/563327ae0ba24ea79bee492798cfeec9
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024/12/21 17:07:38 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run fearless-wren-698 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/57e23f58a898404e96705a914da947bf
 🧪 View experiment at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0
-🏃 View run defiant-steed-92 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/c9400652ac4d421d95752f1290af3edc
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run nosy-bear-1 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/ab1c15a332a44d438647b8a9e9c8ff75
 🧪 View experiment at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0
 </pre></div>
 </div>
@@ -1046,7 +1010,7 @@ ValueError: Found unknown categories [&#39;Holand-Netherlands&#39;] in column 7 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\Users\cgaur\AppData\Local\Programs\Python\Python313\Lib\site-packages\sklearn\model_selection\_search.py:1107: UserWarning: One or more of the test scores are non-finite: [nan nan nan]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\cgaur\anaconda3\Lib\site-packages\sklearn\model_selection\_search.py:1102: UserWarning: One or more of the test scores are non-finite: [nan nan nan]
   warnings.warn(
 </pre></div>
 </div>
@@ -1154,10 +1118,10 @@ ValueError: Found unknown categories [&#39;Holand-Netherlands&#39;] in column 7 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024/12/20 21:25:13 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024/12/21 17:08:00 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run adventurous-hog-313 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/9e0b5820816c4818bd50484c91a144af
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run mysterious-snail-253 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/4d8a0eb0608e4417a7e7798be38e70b6
 🧪 View experiment at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0
 </pre></div>
 </div>
@@ -1172,10 +1136,10 @@ ValueError: Found unknown categories [&#39;Holand-Netherlands&#39;] in column 7 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024/12/20 21:25:29 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024/12/21 17:08:15 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run casual-squirrel-83 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/1298d62db278446e86738c99d6ac5f68
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run popular-fly-774 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/6d81f0558e2a4c1bae30fe80c80bbebc
 🧪 View experiment at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0
 </pre></div>
 </div>
@@ -1190,10 +1154,7 @@ ValueError: Found unknown categories [&#39;Holand-Netherlands&#39;] in column 7 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2024/12/20 21:28:09 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run bedecked-ant-725 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/4310ae46657f48da96bed7f3500e43eb
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run nimble-moth-88 at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0/runs/04da9ba585fe4843a4cc92dbded28836
 🧪 View experiment at: https://dagshub.com/gc54/EAS503_Project.mlflow/#/experiments/0
 </pre></div>
 </div>
