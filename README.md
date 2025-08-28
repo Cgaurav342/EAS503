@@ -1,2 +1,2 @@
 # Adult Income Classification
-[My Project](https://gc54-ub.github.io/EAS503)
+[My Project](https://Cgaurav342.github.io/EAS503)
